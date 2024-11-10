@@ -1,7 +1,7 @@
 from flask import Flask, Response, render_template
 import cv2
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="")
 
 def camera():
     cam = cv2.VideoCapture(0)
